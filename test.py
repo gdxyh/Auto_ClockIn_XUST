@@ -154,7 +154,7 @@ def daka(USERNAME_TEXT, PASSWORD_TEXT, SERVERPUSHKEY, MSG_TO):
     if SERVERPUSHKEY:
         if text == "打卡失败:":
             driver = webdriver.Chrome(options=chrome_options)  # 获取浏览器句柄
-            url = "https://sc.ftqq.com/" + SERVERPUSHKEY + ".send?text=" + text
+            url = "https://sct.ftqq.com/" + SERVERPUSHKEY + ".send?text=" + text
             if (len(desp)):
                 url += "desp=" + desp
             driver.get(url)
